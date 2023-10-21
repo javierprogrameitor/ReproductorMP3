@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(145deg, #c4d1dd, #e9f8ff);
+    box-shadow:  5px 5px 12px #575d62,
+             -5px -5px 12px #ffffff;
+}
+
+.reproductor {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    height: 600px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-content: stretch;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 80px;
+    background: linear-gradient(145deg, #e9f8ff, #c4d1dd);
+    box-shadow:  5px 5px 12px #575d62,
+             -5px -5px 12px #ffffff;
+   
+}
+
+#listaReproduccion a {
+    display: none;
+  }
+
+img {
+    border-radius: 50%;
+    background: linear-gradient(145deg, #939393, #aeaeae);
+    box-shadow:  5px 5px 2px #414141,
+                 -5px -5px 2px #ffffff;
+}
+.rotar-imagen {
+    border-radius: 100%;
+    animation: girar 4s linear infinite;
+    transform-origin: center center;
+  }
+  
+  @keyframes girar {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+#nombreCancion{
+    
+  
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 80px;
+    background: linear-gradient(145deg, #aeaeae, #939393);
+    box-shadow:  5px 5px 12px #414141,
+                 -5px -5px 12px #ffffff;
+}
+
+label{
+    display: inline-block;
+    font-size: 9px;
+    padding: 7px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #aeaeae, #939393);
+    box-shadow:  5px 5px 12px #414141,
+                 -5px -5px 12px #ffffff;
+}
+
+#by{
+    font-size: 6px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+}
+.btn{
+
+    margin: 20px;
+
+}
+.btn img {
+    width: 70px; /* Ajusta el ancho según sea necesario */
+    height: 70px; /* Ajusta la altura según sea necesario */
+    margin: 0px; /* Agrega un espaciado entre las imágenes */
+    border-radius: 80px;
+    background: linear-gradient(145deg, #e9f8ff, #c4d1dd);
+    box-shadow:  5px 5px 12px #575d62,
+             -5px -5px 12px #ffffff;
+
+}
+.btn img:hover{
+    border-radius: 80px;
+    background: linear-gradient(145deg, #c4d1dd, #e9f8ff);
+    box-shadow:  5px 5px 12px #575d62,
+                 -5px -5px 12px #ffffff;
+}
+
+
+.audio{
+    display: none;
+}
+#miAudio {
+    display: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+#rango {
+    width: 80%; /* Ajusta el ancho del rango según sea necesario */
+  }
+  
+  #rango::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    
+    -webkit-appearance: none;
+   
+  width: 20px; /* Ajusta el ancho del punto según sea necesario */
+    height: 20px; /* Ajusta la altura del punto según sea necesario */
+    background: #0074d9; /* Ajusta el color del punto */
+    border-radius: 50%; /* Para que el punto sea circular */
+    cursor: pointer;
+    border: none;
+  }
+  #rangoVolumen {
+    width: 70%; /* Ancho completo del control deslizante */
+    height: 2px; /* Ajusta la altura según tus preferencias */
+    background-color: #a3a3a3; /* Cambia el color de fondo a tu elección */
+    border: none; /* Elimina el borde del control deslizante */
+  }
+  

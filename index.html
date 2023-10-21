@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <title>ReproductorMP3</title>
+</head>
+
+<body>
+    <div class="reproductor">
+        <ul id="listaReproduccion">
+            <li>
+                <a href="sound/BadGyal.mp3" data-imagen="img/BadGyal.png">BadGyal</a>
+            </li>
+            <li>
+                <a href="sound/Stellar.mp3" data-imagen="img/StellarWind.png">StellarWind</a>
+            </li>
+            <li>
+                <a href="sound/Unicorn.mp3" data-imagen="img/Unicorn.png">Unicorn Heads</a>
+            </li>
+            <li>
+                <a href="sound/MasterandCommander.mp3" data-imagen="img/MasterandCommander.png">Master and Commander</a>
+            </li>
+        </ul>
+        <img id="imagenCancion" src="" alt="Imagen de la cancion">
+        <div id="nombreCancion"></div>
+        <input type="range" id="rango" value="2" min="0" max="100">
+        <audio id="miAudio" controls></audio>
+        <div>
+            <label>Volumen</label>
+            <input type="range" id="rangoVolumen" min="0" max="1" step="0.1" value="1">
+        </div>
+        <div class="btn">
+            <img id="anteriorBtn" src="img/BotonPrevious.png"></img>
+            <img id="playBtn" src="img/BotonPlay.png"></img>
+            <img id="pauseBtn" src="img/BotonStop.png"></img>
+            <img id="siguienteBtn" src="img/BotonNext.png"></img>
+        </div>
+        <div>
+            <label id="by">ByJavier</label>
+        </div>
+    </div>
+</body>
+</html>
